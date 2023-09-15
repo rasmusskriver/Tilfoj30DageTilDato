@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="dk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dato Tilføjelse</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div class="popup" id="popup">
+        <div class="popup-content">
+            <p>Ups, tror da lige der er smuttet en lille fejl ind.<br> Brug formatet DDMMYY ligesom du gør i columbus 😊 </p>
+            <div class="slide-slow">
+                <img src="http://www.html.am/images/html-codes/marquees/fish-swimming.gif" alt="Swimming fish">
+              </div>
+            <button id="close-popup">Luk</button>
+        </div>
+    </div>
+
+<div class="addthedaysss">   
+    <h1>Tilføj 30 dage til en dato</h1>
+    <label for="inputDate">Indtast en dato (DDMMYY): </label>
+    <input class="DateFor30" type="text" id="inputDate">
+    <button class="AddButtonForDays" onclick="add30Days()">Tilføj 30 dage</button>
+    <h2 id="result"></h2>
+
+</div>
+
+    <div class="container">
+        <form action="" name="calc" class="calculator">
+          <input type="text" class="value" readonly name="txt" />
+          <span class="num clear" onclick="calc.txt.value=''"><i>C</i></span>
+          <span class="num" onclick="calc.txt.value+='/'"><i>/</i></span>
+          <span class="num" onclick="calc.txt.value+='*'"><i>*</i></span>
+          <span class="num" onclick="calc.txt.value+='7'"><i>7</i></span>
+          <span class="num" onclick="calc.txt.value+='8'"><i>8</i></span>
+          <span class="num" onclick="calc.txt.value+='9'"><i>9</i></span>
+          <span class="num" onclick="calc.txt.value+='-'"><i>-</i></span>
+          <span class="num" onclick="calc.txt.value+='4'"><i>4</i></span>
+          <span class="num" onclick="calc.txt.value+='5'"><i>5</i></span>
+          <span class="num" onclick="calc.txt.value+='6'"><i>6</i></span>
+          <span class="num plus" onclick="calc.txt.value+='+'"><i>+</i></span>
+          <span class="num" onclick="calc.txt.value+='1'"><i>1</i></span>
+          <span class="num" onclick="calc.txt.value+='2'"><i>2</i></span>
+          <span class="num" onclick="calc.txt.value+='3'"><i>3</i></span>
+          <span class="num" onclick="calc.txt.value+='0'"><i>0</i></span>
+          <span class="num" onclick="calc.txt.value+='00'"><i>00</i></span>
+          <span class="num" onclick="calc.txt.value+='.'"><i>.</i></span>
+  
+          <span
+            class="num equal"
+            onclick="document.calc.txt.value=eval(calc.txt.value)"
+            ><i>=</i></span
+          >
+        </form>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
